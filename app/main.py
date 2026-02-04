@@ -3,7 +3,6 @@ from pydantic import BaseModel
 
 app = FastAPI(title="Minha API de Engenharia de Software")
 
-# Endpoint de saúde exigido para o Smoke Test posterior [cite: 333, 560]
 @app.get("/health")
 def health():
     return {"status": "ok"}
